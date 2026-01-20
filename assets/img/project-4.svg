@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="200" height="200" viewBox="0 0 100 100">
+  <defs>
+    <clipPath id="clipRounded">
+      <!-- Rounded square used for clipping (stroke is drawn separately) -->
+      <rect x="0.6" y="0.6" width="98.8" height="98.8" rx="2" ry="2" />
+    </clipPath>
+  </defs>
+
+  <!-- White base -->
+  <rect x="0.6" y="0.6" width="98.8" height="98.8" rx="2" ry="2" fill="#ffffff" />
+
+  <!-- Black triangle (top-left), clipped to rounded square -->
+  <g clip-path="url(#clipRounded)">
+    <path d="M0.6 0.6 L99.4 0.6 L0.6 99.4 Z" fill="#000000" />
+  </g>
+
+  <!-- Border -->
+  <rect x="0.6" y="0.6" width="98.8" height="98.8" rx="2" ry="2" fill="none" stroke="#000000" stroke-width="1.2" />
+</svg>
